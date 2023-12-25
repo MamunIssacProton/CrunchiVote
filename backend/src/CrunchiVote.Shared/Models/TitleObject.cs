@@ -1,5 +1,5 @@
 namespace CrunchVote.Shared.Models;
-internal sealed class TitleObject
+public sealed class TitleObject
 {
     public string Rendered { get; set; }
 
