@@ -1,7 +1,11 @@
+using CruchiVote.Service.DependencyInjection;
+using CruchiVote.Service.Features.GetArticles.Interface;
+using CrunchiVote.Api.ApplicationServices;
 using CrunchiVote.Api.Options;
+using CrunchiVote.Api.Queries;
 using CrunchiVote.Infrastructure.DependencyInjection;
-using CrunchiVote.Infrastructure.Features.GetArticles.Interfaces;
 using CrunchiVote.Shared.Utils;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,10 +17,11 @@ builder.Services.AddHttpClient(HttpClientsName.TechCrunch, (serviceProvider, htt
 });
 
 builder.Services.ResolveRepositoryDependencies();
-
+builder.Services.ResolveServiceDependencies();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.TryAddScoped<ApplicationService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -28,14 +33,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-
-app.MapGet("articles/{page:int}", GetArticles).WithName("get articles").WithOpenApi();
-
-// Define a method for handling the GET request
- object GetArticles(INewsArticleRepository repo, int page=1)
-{
-    var articles = repo.GetArticlesAsync(page: page);
-    return Results.Ok(articles);
-}
+app.MapGet("articles", (ApplicationService appService,int page) => 
+             Results.Ok(
+                             appService.HandleQueryAsync(new GetArticlesQuery(page)))
+                        )
+    .WithName("get articles").WithOpenApi();
 
 app.Run();

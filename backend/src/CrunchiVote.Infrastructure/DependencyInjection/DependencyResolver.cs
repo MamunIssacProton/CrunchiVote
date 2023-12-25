@@ -2,6 +2,8 @@
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+
 [assembly:InternalsVisibleTo("CrunchiVote.Api")]
 namespace CrunchiVote.Infrastructure.DependencyInjection;
 
@@ -21,7 +23,7 @@ public static class DependencyResolver
             var interfaceType = repositoryType.GetInterfaces().FirstOrDefault(i => i != typeof(IBaseRepository));
             if (interfaceType is null)
                 continue;
-            services.AddTransient(interfaceType,repositoryType);
+            services.TryAddScoped(interfaceType,repositoryType);
            
         }
         return services;

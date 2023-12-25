@@ -1,6 +1,7 @@
+using System.Runtime.CompilerServices;
 using CrunchiVote.Shared.DTOs;
-using System.Threading.Tasks;
-using System.Collections.Generic;
+
+[assembly:InternalsVisibleTo("CrunchiVote.Api")]
 namespace CruchiVote.Service.Features.GetArticles.Interface;
 interface INewsArticleService : IBaseService
 {

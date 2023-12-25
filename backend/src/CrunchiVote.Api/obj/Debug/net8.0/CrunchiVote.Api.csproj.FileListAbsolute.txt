@@ -39,3 +39,7 @@
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Infrastructure.pdb
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Shared.pdb
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Domain.dll
+/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Service.dll
+/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Service.pdb
+/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Domain.pdb

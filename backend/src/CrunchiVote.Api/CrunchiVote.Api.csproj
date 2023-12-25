@@ -14,6 +14,11 @@
 
     <ItemGroup>
       <ProjectReference Include="..\CrunchiVote.Infrastructure\CrunchiVote.Infrastructure.csproj" />
+      <ProjectReference Include="..\CrunchiVote.Service\CrunchiVote.Service.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Apis" />
     </ItemGroup>
 
 </Project>

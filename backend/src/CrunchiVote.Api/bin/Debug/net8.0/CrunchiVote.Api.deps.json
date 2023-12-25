@@ -9,6 +9,7 @@
       "CrunchiVote.Api/1.0.0": {
         "dependencies": {
           "CrunchiVote.Infrastructure": "1.0.0",
+          "CrunchiVote.Service": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
@@ -88,6 +89,11 @@
           }
         }
       },
+      "CrunchiVote.Domain/1.0.0": {
+        "runtime": {
+          "CrunchiVote.Domain.dll": {}
+        }
+      },
       "CrunchiVote.Infrastructure/1.0.0": {
         "dependencies": {
           "CrunchiVote.Shared": "1.0.0",
@@ -96,6 +102,16 @@
         },
         "runtime": {
           "CrunchiVote.Infrastructure.dll": {}
+        }
+      },
+      "CrunchiVote.Service/1.0.0": {
+        "dependencies": {
+          "CrunchiVote.Domain": "1.0.0",
+          "CrunchiVote.Infrastructure": "1.0.0",
+          "CrunchiVote.Shared": "1.0.0"
+        },
+        "runtime": {
+          "CrunchiVote.Service.dll": {}
         }
       },
       "CrunchiVote.Shared/1.0.0": {
@@ -181,7 +197,17 @@
       "path": "swashbuckle.aspnetcore.swaggerui/6.4.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
     },
+    "CrunchiVote.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "CrunchiVote.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrunchiVote.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
