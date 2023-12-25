@@ -82,7 +82,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Shared/CrunchiVote.Shared.csproj": {
+                "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Shared/CrunchiVote.Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -94,6 +98,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

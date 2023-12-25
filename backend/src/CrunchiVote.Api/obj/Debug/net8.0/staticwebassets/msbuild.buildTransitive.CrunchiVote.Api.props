@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/CrunchiVote.Api.props" />
+</Project>
