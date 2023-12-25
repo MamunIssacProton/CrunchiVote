@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrunchiVote.Shared", "Crunc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrunchiVote.Service", "CrunchiVote.Service\CrunchiVote.Service.csproj", "{4A5CBF6F-AD9A-4817-A6E4-47C9726EF74D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrunchiVote.Infrastructure", "CrunchiVote.Infrastructure\CrunchiVote.Infrastructure.csproj", "{FBE50D85-6156-48F6-89AC-74824E386B4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{4A5CBF6F-AD9A-4817-A6E4-47C9726EF74D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A5CBF6F-AD9A-4817-A6E4-47C9726EF74D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A5CBF6F-AD9A-4817-A6E4-47C9726EF74D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBE50D85-6156-48F6-89AC-74824E386B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBE50D85-6156-48F6-89AC-74824E386B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBE50D85-6156-48F6-89AC-74824E386B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBE50D85-6156-48F6-89AC-74824E386B4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

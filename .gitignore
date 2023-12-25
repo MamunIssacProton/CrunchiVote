@@ -1,2 +1,4 @@
 backend/src/CrunchiVote.Domain/obj/
 backend/src/CrunchiVote.Shared/obj/
+backend/src/CrunchiVote.Service/obj/
+backend/src/CrunchiVote.Infrastructure/obj/
