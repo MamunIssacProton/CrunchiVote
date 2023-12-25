@@ -1,5 +1,5 @@
 namespace CrunchiVote.Shared.Models;
-public sealed class TitleObject
+public class TitleObject
 {
     public string Rendered { get; set; }
 

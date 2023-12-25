@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "R+VQeAJvC9akVGW5nULVIAbMB0fu8Ha+/rKoW8ShZ5NJ4fRN5lVH7MeAIZJQbdg2E/z3RvSORdVzG0hxNSblyw==",
+  "dgSpecHash": "8Kql0CnPLZ+1yw4DAoAchg5XHJOASaAfLrRo+/mDi8VmXx+AlK/My5rDtXgXrh2bKZTLGLFgEk9dr8UlDUeKVA==",
   "success": true,
   "projectFilePath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/CrunchiVote.Api.csproj",
   "expectedPackageFiles": [
     "/Users/proton/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0/microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
     "/Users/proton/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/proton/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "/Users/proton/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "/Users/proton/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/proton/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/proton/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/Users/proton/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/Users/proton/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

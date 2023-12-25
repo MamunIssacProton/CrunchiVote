@@ -31,3 +31,11 @@
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/obj/Debug/net8.0/CrunchiVote.Api.pdb
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/obj/Debug/net8.0/CrunchiVote.Api.genruntimeconfig.cache
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/obj/Debug/net8.0/ref/CrunchiVote.Api.dll
+/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Infrastructure.deps.json
+/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Infrastructure.runtimeconfig.json
+/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Infrastructure
+/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Infrastructure.dll
+/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Shared.dll
+/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Infrastructure.pdb
+/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Shared.pdb
+/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/Newtonsoft.Json.dll

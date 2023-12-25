@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "i60j6VAMlkj9fX2JNGds8CzkYGruLfh04QoZ2+d0Q9gzIzUyOlr1VxBbdOzuH8KI2+9yCFh9tDb1g16+uz1XGg==",
+  "dgSpecHash": "9FTQcAvPJCoJm1vXbDF7xTO0NWyt9bDQLuWhyV/Tc6p5pRaIfmhEEm8OBd3ln1rNrWptEGaiJWuHEIo7h9e3+g==",
   "success": true,
   "projectFilePath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Service/CrunchiVote.Service.csproj",
   "expectedPackageFiles": [
     "/Users/proton/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
-    "/Users/proton/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+    "/Users/proton/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/proton/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
