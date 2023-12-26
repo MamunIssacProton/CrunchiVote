@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 [assembly: InternalsVisibleTo("CrunchiVote.Service")]
 
 namespace CrunchiVote.Infrastructure.Features.GetArticles.Interfaces;
-interface INewsArticleRepository : IBaseRepository
+internal interface INewsArticleRepository : IBaseRepository
 {
     ValueTask<List<ArticleDTO>> GetArticlesAsync(int page = 1);
 }

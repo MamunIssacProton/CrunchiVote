@@ -1,6 +1,7 @@
 using CruchiVote.Service.DependencyInjection;
 using CruchiVote.Service.Features.GetArticles.Interface;
 using CrunchiVote.Api.ApplicationServices;
+using CrunchiVote.Api.ExceptionHanlder;
 using CrunchiVote.Api.Options;
 using CrunchiVote.Api.Queries;
 using CrunchiVote.Infrastructure.DependencyInjection;
@@ -22,6 +23,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.TryAddScoped<ApplicationService>();
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -33,10 +36,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("articles", (ApplicationService appService,int page) => 
+app.MapGet("articles",  async (ApplicationService appService,int page) => 
              Results.Ok(
-                             appService.HandleQueryAsync(new GetArticlesQuery(page)))
+                            await appService.HandleQueryAsync(new GetArticlesQuery(page)))
                         )
     .WithName("get articles").WithOpenApi();
-
+app.UseExceptionHandler();
 app.Run();
