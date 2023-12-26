@@ -43,3 +43,6 @@
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Service.dll
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Service.pdb
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/CrunchiVote.Domain.pdb
+/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/Polly.dll
+/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/Polly.Core.dll
+/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/Polly.Extensions.dll

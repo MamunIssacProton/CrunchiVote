@@ -14,11 +14,9 @@ internal sealed class NewsArticleRepository :INewsArticleRepository
     public NewsArticleRepository(IHttpClientFactory clientFactory) => this.ClientFactory = clientFactory;
     public async ValueTask<List<ArticleDTO>> GetArticlesAsync(int page = 1)
     {
-        List<ArticleDTO> articles = new List<ArticleDTO>();
-        try
-        {
-            string endpoint = $"?page={page}&_embed=true&es=true&cachePrevention=0";
-            var rawResponse=await  this.ClientFactory.CreateClient(HttpClientsName.TechCrunch).GetStringAsync(endpoint);
+        
+        var endpoint = $"?page={page}&_embed=true&es=true&cachePrevention=0";
+        var rawResponse=await  this.ClientFactory.CreateClient(HttpClientsName.TechCrunch).GetStringAsync(endpoint);
 
            return JsonConvert.DeserializeObject<List<NewsArticle>>(rawResponse).
                                     Select(article=>
@@ -28,13 +26,5 @@ internal sealed class NewsArticleRepository :INewsArticleRepository
                                             )
                                     .ToList();
 
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e.Message);
-            throw;
-        }
-
-        return articles;
     }
 }
