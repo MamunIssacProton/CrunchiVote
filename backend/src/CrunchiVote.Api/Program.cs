@@ -36,6 +36,9 @@ builder.Services.AddResiliency();
 //add rate limiter
 builder.Services.AddClientIpRateLimiter();
 
+// add compression
+builder.Services.AddCompression();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
