@@ -1,5 +1,6 @@
 using CruchiVote.Service.DependencyInjection;
 using CrunchiVote.Api;
+using CrunchiVote.Api.Apis;
 using CrunchiVote.Api.ApplicationServices;
 using CrunchiVote.Api.ExceptionHanlder;
 using CrunchiVote.Api.Options;
@@ -46,11 +47,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("articles",  async (ApplicationService appService,int page) => 
-             Results.Ok(
-                            await appService.HandleQueryAsync(new GetArticlesQuery(page)))
-                        )
-    .WithName("get articles").WithOpenApi();
+/// register api endpoints
+app.RegisterArticlesEndpoints();
 
 
 
