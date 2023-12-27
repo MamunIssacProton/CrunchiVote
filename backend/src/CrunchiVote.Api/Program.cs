@@ -1,4 +1,5 @@
 using CruchiVote.Service.DependencyInjection;
+using CrunchiVote.Api;
 using CrunchiVote.Api.ApplicationServices;
 using CrunchiVote.Api.ExceptionHanlder;
 using CrunchiVote.Api.Options;
@@ -29,14 +30,11 @@ builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
 
 //add polly for ensuring resiliency
-builder.Services.AddResiliencePipeline<string,List<ArticleDTO>>("article-fallback", pipelineBuilder =>
-{
-    pipelineBuilder.AddFallback(new FallbackStrategyOptions<List<ArticleDTO>>
-    {
-       
-        FallbackAction = _=>Outcome.FromResultAsValueTask<List<ArticleDTO>>(Artcls.Empty)
-    });
-});
+builder.Services.AddResiliency();
+
+//add rate limiter
+builder.Services.AddClientIpRateLimiter();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -53,5 +51,9 @@ app.MapGet("articles",  async (ApplicationService appService,int page) =>
                             await appService.HandleQueryAsync(new GetArticlesQuery(page)))
                         )
     .WithName("get articles").WithOpenApi();
+
+
+
 app.UseExceptionHandler();
+app.UseRateLimiter();
 app.Run();

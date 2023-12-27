@@ -23,7 +23,7 @@ internal class ApplicationService
 
     internal async ValueTask<List<ArticleDTO>> HandleQueryAsync(GetArticlesQuery query)
     {
-        var pipeline = this.ResiliencePipelineProvider.GetPipeline<List<ArticleDTO>>("article-fallback");
+        var pipeline = this.ResiliencePipelineProvider.GetPipeline<List<ArticleDTO>>(Fallbacks.ArticleFallBack);
         return await pipeline.ExecuteAsync(async ct =>
         
             await this.ArticleService.GetArticlesAsync(query.page),new CancellationToken()
