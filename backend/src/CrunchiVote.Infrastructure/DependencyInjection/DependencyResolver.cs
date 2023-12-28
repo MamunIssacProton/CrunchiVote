@@ -1,6 +1,9 @@
 
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using CrunchiVote.Infrastructure.DbContexts;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
@@ -28,4 +31,6 @@ public static class DependencyResolver
         }
         return services;
     }
+
+   
 }

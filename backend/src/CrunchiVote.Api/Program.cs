@@ -3,8 +3,11 @@ using CrunchiVote.Api;
 using CrunchiVote.Api.Apis;
 using CrunchiVote.Api.ApplicationServices;
 using CrunchiVote.Api.ExceptionHanlder;
+
 using CrunchiVote.Api.Options;
 using CrunchiVote.Api.Queries;
+using CrunchiVote.Identity;
+using CrunchiVote.Identity.ExtensionMethods;
 using CrunchiVote.Infrastructure.DependencyInjection;
 using CrunchiVote.Shared.DTOs;
 using CrunchiVote.Shared.Utils;
@@ -49,6 +52,11 @@ builder.Services.AddClientIpRateLimiter();
 // add api response compression
 builder.Services.AddCompression();
 
+builder.Services.AddIdentities();
+
+builder.Services.AddOptions();
+builder.Services.AddAuthorizationCore();
+builder.Services.AddAntiforgery();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -62,6 +70,13 @@ app.UseHttpsRedirection();
 
 /// register api endpoints
 app.RegisterArticlesEndpoints();
+
+app.RegisterUsersEndpoints();
+
+
+app.UseAuthentication();
+app.UseAuthorization();
+app.UseAntiforgery();
 
 
 
