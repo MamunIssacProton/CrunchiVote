@@ -10,6 +10,6 @@ public class TechCrunchClientOptionsSetup:IConfigureOptions<TechCrunchClientOpti
     public TechCrunchClientOptionsSetup(IConfiguration configuration) => this.Configuration = configuration;
     public void Configure(TechCrunchClientOptions options)
     {
-        this.Configuration.GetSection("TechCrunchClientOptions").Bind(options);
+        this.Configuration.GetSection(ConfigSection.TechCrunchClientOptions).Bind(options);
     }
 }

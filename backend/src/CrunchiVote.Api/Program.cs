@@ -14,21 +14,31 @@ using Polly;
 using Polly.Fallback;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.ConfigureOptions<TechCrunchClientOptionsSetup>();
+// register options with validation
+builder.Services.AddOptions<TechCrunchClientOptions>()
+                .BindConfiguration(ConfigSection.TechCrunchClientOptions)
+                .ValidateDataAnnotations().ValidateOnStart();
+
+// add TechCrunch as http client 
 builder.Services.AddHttpClient(HttpClientsName.TechCrunch, (serviceProvider, httpClient) =>
 {
     var option = serviceProvider.GetRequiredService<IOptions<TechCrunchClientOptions>>()!.Value;
     httpClient.BaseAddress = new Uri(option.EndpointUrl);
 });
 
+//resolve dependencies
 builder.Services.ResolveRepositoryDependencies();
 builder.Services.ResolveServiceDependencies();
+builder.Services.TryAddScoped<ApplicationService>();
+
+//api explorer
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.TryAddScoped<ApplicationService>();
+//add Global Exception handler
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
+
 
 //add polly for ensuring resiliency
 builder.Services.AddResiliency();
@@ -36,7 +46,7 @@ builder.Services.AddResiliency();
 //add rate limiter
 builder.Services.AddClientIpRateLimiter();
 
-// add compression
+// add api response compression
 builder.Services.AddCompression();
 
 var app = builder.Build();
