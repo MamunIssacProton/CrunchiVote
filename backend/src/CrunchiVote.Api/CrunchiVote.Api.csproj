@@ -30,7 +30,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Apis\Comments" />
       <Folder Include="Apis\Samples" />
       <Folder Include="Apis\Vote" />
     </ItemGroup>

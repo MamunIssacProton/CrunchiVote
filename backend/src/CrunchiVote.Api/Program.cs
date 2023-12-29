@@ -1,6 +1,7 @@
 using CruchiVote.Service.DependencyInjection;
 using CrunchiVote.Api;
 using CrunchiVote.Api.Apis;
+using CrunchiVote.Api.Apis.Comments;
 using CrunchiVote.Api.ApplicationServices;
 using CrunchiVote.Api.ExceptionHanlder;
 
@@ -11,6 +12,7 @@ using CrunchiVote.Identity.ExtensionMethods;
 using CrunchiVote.Infrastructure.DependencyInjection;
 using CrunchiVote.Shared.DTOs;
 using CrunchiVote.Shared.Utils;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
 using Polly;
@@ -55,8 +57,9 @@ builder.Services.AddCompression();
 builder.Services.AddIdentities();
 
 builder.Services.AddOptions();
-builder.Services.AddAuthorizationCore();
 builder.Services.AddAntiforgery();
+builder.Services.AddControllersWithViews();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -67,19 +70,19 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-/// register api endpoints
-app.RegisterArticlesEndpoints();
-
-app.RegisterUsersEndpoints();
-
-
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseAntiforgery();
 
+/// register api endpoints
+app.RegisterArticlesEndpoints();
+
+app.RegisterCommentEndpoints();
 
 
+
+
+app.MapIdentityApi<ApplicationUser>();
 app.UseExceptionHandler();
 app.UseRateLimiter();
 app.Run();

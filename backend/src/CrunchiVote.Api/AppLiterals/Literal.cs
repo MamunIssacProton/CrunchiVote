@@ -10,6 +10,8 @@ internal record ApiEndpoints
     internal const string Articles = nameof(Articles);
     internal const string RegisterUser = nameof(RegisterUser);
     internal const string LoginUser = nameof(LoginUser);
+    internal const string PostComment = nameof(PostComment);
+
 }
 internal class Fallbacks
 {

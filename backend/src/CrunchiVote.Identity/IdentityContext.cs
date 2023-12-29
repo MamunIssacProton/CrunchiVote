@@ -9,8 +9,6 @@ namespace CrunchiVote.Identity;
 
 internal class IdentityContext : IdentityDbContext<ApplicationUser>
 {
-    public  DbSet<ApplicationUser>Users { get; set; }
-
     public IdentityContext()
     {
         this.Database.Migrate();
