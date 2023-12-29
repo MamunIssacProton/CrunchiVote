@@ -1,9 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\CrunchiVote.Infrastructure\CrunchiVote.Infrastructure.csproj" />
-    <ProjectReference Include="..\CrunchiVote.Shared\CrunchiVote.Shared.csproj" />
+    
     <ProjectReference Include="..\CrunchiVote.Domain\CrunchiVote.Domain.csproj" />
+    
+    <ProjectReference Include="..\CrunchiVote.Identity\CrunchiVote.Identity.csproj" />
+    
+    <ProjectReference Include="..\CrunchiVote.Infrastructure\CrunchiVote.Infrastructure.csproj" />
+    
+    <ProjectReference Include="..\CrunchiVote.Shared\CrunchiVote.Shared.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

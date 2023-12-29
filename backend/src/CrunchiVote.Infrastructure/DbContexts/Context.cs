@@ -7,8 +7,7 @@ namespace CrunchiVote.Infrastructure.DbContexts;
 
 internal class Context:DbContext
 {
-    public DbSet<User>Users{get; set; }
-    
+    public  DbSet<Comment>Comments { get; set; }
     public Context()=> this.Database.Migrate();
          
     
@@ -35,7 +34,7 @@ internal class Context:DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        modelBuilder.ApplyConfiguration(new UserConf());
+        modelBuilder.ApplyConfiguration(new CommentCfg());
     }
 }
 

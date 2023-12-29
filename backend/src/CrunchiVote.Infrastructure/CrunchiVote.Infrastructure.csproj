@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CrunchiVote.Domain\CrunchiVote.Domain.csproj" />
+    <ProjectReference Include="..\CrunchiVote.Identity\CrunchiVote.Identity.csproj" />
     <ProjectReference Include="..\CrunchiVote.Shared\CrunchiVote.Shared.csproj" />
   </ItemGroup>
 

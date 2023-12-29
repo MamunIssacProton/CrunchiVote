@@ -289,6 +289,9 @@
               "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/CrunchiVote.Domain.csproj": {
                 "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/CrunchiVote.Domain.csproj"
               },
+              "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/CrunchiVote.Identity.csproj": {
+                "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/CrunchiVote.Identity.csproj"
+              },
               "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Shared/CrunchiVote.Shared.csproj": {
                 "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Shared/CrunchiVote.Shared.csproj"
               }
@@ -386,6 +389,9 @@
             "projectReferences": {
               "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/CrunchiVote.Domain.csproj": {
                 "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/CrunchiVote.Domain.csproj"
+              },
+              "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/CrunchiVote.Identity.csproj": {
+                "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/CrunchiVote.Identity.csproj"
               },
               "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Infrastructure/CrunchiVote.Infrastructure.csproj": {
                 "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Infrastructure/CrunchiVote.Infrastructure.csproj"

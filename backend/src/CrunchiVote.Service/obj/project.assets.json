@@ -669,11 +669,31 @@
           "bin/placeholder/CrunchiVote.Domain.dll": {}
         }
       },
+      "CrunchiVote.Identity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.Extensions.Configuration.Json": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Newtonsoft.Json": "13.0.3",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CrunchiVote.Identity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CrunchiVote.Identity.dll": {}
+        }
+      },
       "CrunchiVote.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "CrunchiVote.Domain": "1.0.0",
+          "CrunchiVote.Identity": "1.0.0",
           "CrunchiVote.Shared": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
@@ -1724,6 +1744,11 @@
       "path": "../CrunchiVote.Domain/CrunchiVote.Domain.csproj",
       "msbuildProject": "../CrunchiVote.Domain/CrunchiVote.Domain.csproj"
     },
+    "CrunchiVote.Identity/1.0.0": {
+      "type": "project",
+      "path": "../CrunchiVote.Identity/CrunchiVote.Identity.csproj",
+      "msbuildProject": "../CrunchiVote.Identity/CrunchiVote.Identity.csproj"
+    },
     "CrunchiVote.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../CrunchiVote.Infrastructure/CrunchiVote.Infrastructure.csproj",
@@ -1738,6 +1763,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "CrunchiVote.Domain >= 1.0.0",
+      "CrunchiVote.Identity >= 1.0.0",
       "CrunchiVote.Infrastructure >= 1.0.0",
       "CrunchiVote.Shared >= 1.0.0"
     ]
@@ -1771,6 +1797,9 @@
           "projectReferences": {
             "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/CrunchiVote.Domain.csproj": {
               "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/CrunchiVote.Domain.csproj"
+            },
+            "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/CrunchiVote.Identity.csproj": {
+              "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/CrunchiVote.Identity.csproj"
             },
             "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Infrastructure/CrunchiVote.Infrastructure.csproj": {
               "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Infrastructure/CrunchiVote.Infrastructure.csproj"

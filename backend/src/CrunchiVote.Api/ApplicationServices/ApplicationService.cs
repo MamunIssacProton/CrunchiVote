@@ -14,7 +14,7 @@ internal class ApplicationService
 {
     private readonly INewsArticleService ArticleService;
     private readonly ResiliencePipelineProvider<string> ResiliencePipelineProvider;
-
+    private  readonly IComm
     
     public ApplicationService(INewsArticleService articleService,
             ResiliencePipelineProvider<string> resiliencePipelineProvider 
