@@ -1,17 +1,23 @@
 using System.Collections.Immutable;
 using CrunchiVote.Infrastructure.ExtensionMethods;
-using CrunchiVote.Infrastructure.Features.GetArticles.Interfaces;
-
+using CrunchiVote.Infrastructure.Interfaces;
 using CrunchiVote.Shared.DTOs;
 using CrunchiVote.Shared.Models;
 using CrunchiVote.Shared.Utils;
 using Newtonsoft.Json;
 
-namespace CrunchiVote.Infrastructure.Features.GetArticles.Repositories;
+namespace CrunchiVote.Infrastructure.Repositories;
 internal sealed class NewsArticleRepository :INewsArticleRepository
 {
     private readonly IHttpClientFactory ClientFactory;
-    public NewsArticleRepository(IHttpClientFactory clientFactory) => this.ClientFactory = clientFactory;
+    protected readonly ICommentsRepository CommentsRepository;
+
+    public NewsArticleRepository(IHttpClientFactory clientFactory)
+    {
+        this.ClientFactory = clientFactory;
+        this.CommentsRepository = CommentsRepository;
+    }
+
     public async ValueTask<List<ArticleDTO>> GetArticlesAsync(int page = 1)
     {
         

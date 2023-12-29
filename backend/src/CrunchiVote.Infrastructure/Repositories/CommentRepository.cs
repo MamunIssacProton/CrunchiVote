@@ -2,10 +2,10 @@ using System.Collections.Immutable;
 using CrunchiVote.Domain.Entities;
 using CrunchiVote.Identity;
 using CrunchiVote.Infrastructure.DbContexts;
-using CrunchiVote.Infrastructure.Features.AddComments.Interfaces;
+using CrunchiVote.Infrastructure.Interfaces;
 using CrunchiVote.Shared.DTOs;
 
-namespace CrunchiVote.Infrastructure.Features.AddComments.Repositories;
+namespace CrunchiVote.Infrastructure.Repositories;
 public  class Commentsrepository :ICommentsRepository
 {
     private readonly Context Context;

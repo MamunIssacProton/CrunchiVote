@@ -1,11 +1,10 @@
-
-using CruchiVote.Service.Features.AddComments.Interfaces;
+using CruchiVote.Service.Interfaces;
 using CrunchiVote.Domain.Entities;
 using CrunchiVote.Identity;
-using CrunchiVote.Infrastructure.Features.AddComments.Interfaces;
+using CrunchiVote.Infrastructure.Interfaces;
 using CrunchiVote.Shared.DTOs;
 
-namespace CruchiVote.Service.Features.AddComments.Services;
+namespace CruchiVote.Service.Services;
 
 internal class CommentService :ICommentService
 {

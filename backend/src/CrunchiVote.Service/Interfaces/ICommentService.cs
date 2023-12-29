@@ -3,7 +3,7 @@ using CrunchiVote.Domain.Entities;
 using CrunchiVote.Identity;
 using CrunchiVote.Shared.DTOs;
 [assembly:InternalsVisibleTo("CruchiVote.Api")]
-namespace CruchiVote.Service.Features.AddComments.Interfaces;
+namespace CruchiVote.Service.Interfaces;
 
 internal interface ICommentService: IBaseService
 {

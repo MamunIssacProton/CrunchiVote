@@ -1,8 +1,8 @@
-using CruchiVote.Service.Features.GetArticles.Interface;
-using CrunchiVote.Infrastructure.Features.GetArticles.Interfaces;
+using CruchiVote.Service.Interface;
+using CrunchiVote.Infrastructure.Interfaces;
 using CrunchiVote.Shared.DTOs;
 
-namespace CruchiVote.Service.Features.GetArticles.Services;
+namespace CruchiVote.Service.Services;
 internal class NewsArticleService : INewsArticleService
 {
     readonly INewsArticleRepository NewsArticleRepository;

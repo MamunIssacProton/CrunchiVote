@@ -5,7 +5,7 @@ using CrunchiVote.Identity;
 
 [assembly: InternalsVisibleTo("CrunchiVote.Service")]
 
-namespace CrunchiVote.Infrastructure.Features.AddComments.Interfaces; 
+namespace CrunchiVote.Infrastructure.Interfaces; 
 internal interface ICommentsRepository : IBaseRepository
 {
    internal ValueTask<ResultDTO> AddCommentOnArticleAsync(Comment comment);

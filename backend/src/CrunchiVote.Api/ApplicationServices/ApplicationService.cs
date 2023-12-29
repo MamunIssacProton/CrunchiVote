@@ -1,6 +1,6 @@
 using System.ComponentModel;
-using CruchiVote.Service.Features.AddComments.Interfaces;
-using CruchiVote.Service.Features.GetArticles.Interface;
+using CruchiVote.Service.Interface;
+using CruchiVote.Service.Interfaces;
 using CrunchiVote.Api.Commands;
 using CrunchiVote.Api.Queries;
 using CrunchiVote.Domain.Entities;

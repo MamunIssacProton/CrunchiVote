@@ -1,5 +1,5 @@
 namespace CrunchiVote.Shared.DTOs;
-public record ArticleDTO(int Id, string heading, string link, string author);
+public record ArticleDTO(int Id, string heading, string link, string author, List<CommentDTO?>comments=null);
 
 public static class Artcls
 {
