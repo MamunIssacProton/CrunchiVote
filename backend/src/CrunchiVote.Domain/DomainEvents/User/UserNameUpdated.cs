@@ -2,7 +2,7 @@ using CrunchVote.Domain;
 
 namespace CrunchiVote.Domain.DomainEvents.User;
 
-public class UserNameAddeed: IDomainEvent
+public class UserNameAdded: IDomainEvent
 {
     public  required  string UserName { get; set; }
 }

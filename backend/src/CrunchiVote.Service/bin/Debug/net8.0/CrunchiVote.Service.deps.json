@@ -329,6 +329,9 @@
         }
       },
       "CrunchiVote.Shared/1.0.0": {
+        "dependencies": {
+          "CrunchiVote.Domain": "1.0.0"
+        },
         "runtime": {
           "CrunchiVote.Shared.dll": {}
         }

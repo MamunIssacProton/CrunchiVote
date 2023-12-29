@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hPQ/IOXKThfttccfwZTGlrPRUXQ7vavEm1S+yz04YfOa4nD96X6d6anM7GOKOXLCEz04iFGHWJurcRkNe0Xt8Q==",
+  "dgSpecHash": "L7eN4xlSEP86rIX3H+Za5GQhU8NMYZsFNCMUzsgXeqXiDk2SeIHAzpfQAHRmUj+v2A6mraaEa0Cgi8NqxUl+XA==",
   "success": true,
   "projectFilePath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Infrastructure/CrunchiVote.Infrastructure.csproj",
   "expectedPackageFiles": [

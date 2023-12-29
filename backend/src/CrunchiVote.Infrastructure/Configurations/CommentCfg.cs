@@ -10,9 +10,9 @@ internal class CommentCfg : IEntityTypeConfiguration<Comment>
     {
         builder.HasKey(x => x.Id);
         builder.HasIndex(x => x.UserName);
-        builder.OwnsOne(x => x.Message).Property(x => x.Value).HasColumnName("Message");
-        builder.OwnsOne(x => x.ArticleId).Property(x=>x.Value).HasColumnName("ArticleId");
-        
+        builder.OwnsOne(x => x.Message).Property(x => x.Value).HasColumnName("Message").IsRequired();
+        builder.OwnsOne(x => x.ArticleId).Property(x=>x.Value).HasColumnName("ArticleId").IsRequired();
+        builder.HasMany<Vote>(x => x.Votes).WithOne();
         builder.Ignore(x => x.version);
     }
 }

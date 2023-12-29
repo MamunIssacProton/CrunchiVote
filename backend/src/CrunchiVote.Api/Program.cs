@@ -2,6 +2,7 @@ using CruchiVote.Service.DependencyInjection;
 using CrunchiVote.Api;
 using CrunchiVote.Api.Apis;
 using CrunchiVote.Api.Apis.Comments;
+using CrunchiVote.Api.Apis.Vote;
 using CrunchiVote.Api.ApplicationServices;
 using CrunchiVote.Api.ExceptionHanlder;
 
@@ -85,7 +86,7 @@ app.UseAntiforgery();
 app.RegisterArticlesEndpoints();
 
 app.RegisterCommentEndpoints();
-
+app.RegisterVoteEndpoints();
 
 
 

@@ -8,4 +8,5 @@ namespace CruchiVote.Service.Interfaces;
 internal interface ICommentService: IBaseService
 {
      internal  ValueTask<ResultDTO> AddCommentOnArticleAsync(Comment comment);
+     internal ValueTask<List<CommentDTO>> GetCommentsByArticleIdAsync(int articleId);
 }

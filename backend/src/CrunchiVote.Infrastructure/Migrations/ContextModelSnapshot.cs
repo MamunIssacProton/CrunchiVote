@@ -38,6 +38,28 @@ namespace CrunchiVote.Infrastructure.Migrations
                     b.ToTable("Comments");
                 });
 
+            modelBuilder.Entity("CrunchiVote.Domain.Entities.Vote", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("CommentId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("GivenBy")
+                        .HasColumnType("text");
+
+                    b.Property<int>("VoteType")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CommentId", "GivenBy");
+
+                    b.ToTable("Votes");
+                });
+
             modelBuilder.Entity("CrunchiVote.Domain.Entities.Comment", b =>
                 {
                     b.OwnsOne("CruchiVote.Domain.ValueObjects.ArticleId", "ArticleId", b1 =>
@@ -63,6 +85,7 @@ namespace CrunchiVote.Infrastructure.Migrations
                                 .HasColumnType("uuid");
 
                             b1.Property<string>("Value")
+                                .IsRequired()
                                 .HasColumnType("text")
                                 .HasColumnName("Message");
 
@@ -77,6 +100,20 @@ namespace CrunchiVote.Infrastructure.Migrations
                     b.Navigation("ArticleId");
 
                     b.Navigation("Message");
+                });
+
+            modelBuilder.Entity("CrunchiVote.Domain.Entities.Vote", b =>
+                {
+                    b.HasOne("CrunchiVote.Domain.Entities.Comment", null)
+                        .WithMany("Votes")
+                        .HasForeignKey("CommentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("CrunchiVote.Domain.Entities.Comment", b =>
+                {
+                    b.Navigation("Votes");
                 });
 #pragma warning restore 612, 618
         }

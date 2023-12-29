@@ -20,6 +20,11 @@ public static class CommentsModule
            .RequireAuthorization()
            .WithName(ApiEndpoints.PostComment).WithOpenApi();
 
-      
+       
+        endpoints.MapGet(ApiEndpoints.GetCommentsById,  async (ApplicationService appService,int articleId) => 
+                Results.Ok(
+                    await appService.HandleQueryAsync(articleId)
+            ))
+            .WithName(ApiEndpoints.GetCommentsById).WithOpenApi();
     }
 }

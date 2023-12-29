@@ -6,4 +6,8 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CrunchiVote.Domain\CrunchiVote.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

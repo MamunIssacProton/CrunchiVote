@@ -31,7 +31,6 @@
 
     <ItemGroup>
       <Folder Include="Apis\Samples" />
-      <Folder Include="Apis\Vote" />
     </ItemGroup>
 
 </Project>

@@ -8,8 +8,13 @@ namespace CrunchiVote.Infrastructure.DbContexts;
 public class Context:DbContext
 {
     public  DbSet<Comment>Comments { get; set; }
-         
     
+    public  DbSet<Vote>Votes { get; set; }
+
+    public Context()
+    {
+        
+    }
     public Context(DbContextOptions<Context> options) : base(options)
     {
         
@@ -34,6 +39,7 @@ public class Context:DbContext
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.ApplyConfiguration(new CommentCfg());
+        modelBuilder.ApplyConfiguration(new VoteCfg());
     }
 }
 

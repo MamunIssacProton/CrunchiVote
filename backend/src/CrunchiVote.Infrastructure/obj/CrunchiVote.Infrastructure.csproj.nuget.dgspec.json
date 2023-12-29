@@ -274,7 +274,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/CrunchiVote.Domain.csproj": {
+                "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/CrunchiVote.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

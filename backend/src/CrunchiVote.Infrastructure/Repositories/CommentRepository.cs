@@ -4,6 +4,7 @@ using CrunchiVote.Identity;
 using CrunchiVote.Infrastructure.DbContexts;
 using CrunchiVote.Infrastructure.Interfaces;
 using CrunchiVote.Shared.DTOs;
+using Microsoft.EntityFrameworkCore;
 
 namespace CrunchiVote.Infrastructure.Repositories;
 public  class Commentsrepository :ICommentsRepository
@@ -18,4 +19,11 @@ public  class Commentsrepository :ICommentsRepository
         await this.Context.SaveChangesAsync();
         return new ResultDTO(true,$"{comment.Message.Value} has successfully added on article id  {comment.ArticleId.Value}");
     }
+
+     public async ValueTask<List<CommentDTO>> GetCommentsByArticleIdAsync(int articleId)
+     {
+       var d= await this.Context.Comments.AsNoTracking().Include(x=>x.Votes).ToListAsync();
+            
+        return  d.Where(x=>x.ArticleId==articleId).Select(x => new CommentDTO(x.Id, x.UserName, x.Message,x.Votes.Select(v=>new VoteDTO(v.CommentId,v.Id,v.GivenBy,v.VoteType)).ToList())).ToList();
+     }
 }

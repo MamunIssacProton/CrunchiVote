@@ -19,6 +19,11 @@ public class Comment: AggregateRoot
     
     internal  string UserName { get; set; }
 
+    internal List<Vote>Votes { get; set; }
+    
+    internal  int UpVoteCounts { get; set; }
+    
+    internal  int DownVoteCounts { get; set; }
     protected Comment()
     {
             
@@ -33,7 +38,7 @@ public class Comment: AggregateRoot
     {
         ArticleId = articleId
     });
-    public void AddUserName(string username) => ApplyDomainEvent(new UserNameAddeed()
+    public void AddUserName(string username) => ApplyDomainEvent(new UserNameAdded()
     {
         UserName = username
     });
@@ -47,7 +52,7 @@ public class Comment: AggregateRoot
         switch (domainEvent)
         {
             
-            case UserNameAddeed e:
+            case UserNameAdded e:
                 this.UserName = e.UserName;
                 break;
             
