@@ -5,20 +5,21 @@ using CrunchVote.Domain;
 using CrunchVote.Domain.DomainEvents.Article;
 using CrunchVote.Domain.DomainEvents.Comment;
 
-[assembly:InternalsVisibleTo("CruchiVote.Service.Features.AddComments.Interfaces")]
 [assembly:InternalsVisibleTo("CrunchiVote.Infrastructure")]
+[assembly:InternalsVisibleTo("CrunchiVote.Service")]
+[assembly:InternalsVisibleTo("CrunchiVote.Api")] 
 namespace CrunchiVote.Domain.Entities;
 
-internal class Comment: AggregateRoot
+public class Comment: AggregateRoot
 {
-    internal  required  ArticleId ArticleId { get; set; }
-    internal required Guid Id { get; set; }
+    internal   ArticleId ArticleId { get; set; }
+    internal  Guid Id { get; set; }
     
-    internal required CommentMessage Message { get; set; }
+    internal  CommentMessage Message { get; set; }
     
-    internal  required  string UserName { get; set; }
+    internal  string UserName { get; set; }
 
-    public Comment()
+    protected Comment()
     {
             
     }

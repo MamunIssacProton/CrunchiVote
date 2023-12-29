@@ -5,10 +5,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace CrunchiVote.Infrastructure.DbContexts;
 
-internal class Context:DbContext
+public class Context:DbContext
 {
     public  DbSet<Comment>Comments { get; set; }
-    public Context()=> this.Database.Migrate();
          
     
     public Context(DbContextOptions<Context> options) : base(options)

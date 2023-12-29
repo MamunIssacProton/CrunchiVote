@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using CruchiVote.Service.Features.AddComments.Interfaces;
 using CruchiVote.Service.Features.GetArticles.Interface;
 using CrunchiVote.Api.Commands;
 using CrunchiVote.Api.Queries;
@@ -14,16 +15,17 @@ internal class ApplicationService
 {
     private readonly INewsArticleService ArticleService;
     private readonly ResiliencePipelineProvider<string> ResiliencePipelineProvider;
-    private  readonly IComm
+    private  readonly ICommentService CommentService;
     
-    public ApplicationService(INewsArticleService articleService,
-            ResiliencePipelineProvider<string> resiliencePipelineProvider 
-   
+    public ApplicationService(
+            ResiliencePipelineProvider<string> resiliencePipelineProvider,
+            INewsArticleService articleService,
+            ICommentService commentService
         )
     {
-
-        this.ArticleService = articleService;
         this.ResiliencePipelineProvider = resiliencePipelineProvider;
+        this.ArticleService = articleService;
+        this.CommentService = commentService;
      
     }
 
@@ -35,6 +37,17 @@ internal class ApplicationService
             await this.ArticleService.GetArticlesAsync(query.page),new CancellationToken()
         );
       
+    }
+
+
+    internal async ValueTask<ResultDTO> HandleCommandAsync(AddCommentCommand command, string userName)
+    {
+        var comment = new Comment(Guid.NewGuid());
+        comment.AddUserName(userName);
+        comment.AddArticleId(command.ArticleId);
+        comment.AddCommentMessage(command.Message);
+       
+        return await this.CommentService.AddCommentOnArticleAsync(comment);
     }
 
   

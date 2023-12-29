@@ -805,6 +805,7 @@
       "CrunchiVote.Infrastructure/1.0.0": {
         "dependencies": {
           "CrunchiVote.Domain": "1.0.0",
+          "CrunchiVote.Identity": "1.0.0",
           "CrunchiVote.Shared": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
@@ -821,6 +822,7 @@
       "CrunchiVote.Service/1.0.0": {
         "dependencies": {
           "CrunchiVote.Domain": "1.0.0",
+          "CrunchiVote.Identity": "1.0.0",
           "CrunchiVote.Infrastructure": "1.0.0",
           "CrunchiVote.Shared": "1.0.0"
         },

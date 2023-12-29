@@ -13,6 +13,8 @@ using CrunchiVote.Infrastructure.DependencyInjection;
 using CrunchiVote.Shared.DTOs;
 using CrunchiVote.Shared.Utils;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
 using Polly;
@@ -32,6 +34,11 @@ builder.Services.AddHttpClient(HttpClientsName.TechCrunch, (serviceProvider, htt
 });
 
 //resolve dependencies
+builder.Services.AddDbContext<CrunchiVote.Infrastructure.DbContexts.Context>((options =>
+{
+
+    options.UseNpgsql(builder.Configuration.GetConnectionString("postgres"));
+}), ServiceLifetime.Scoped);
 builder.Services.ResolveRepositoryDependencies();
 builder.Services.ResolveServiceDependencies();
 builder.Services.TryAddScoped<ApplicationService>();

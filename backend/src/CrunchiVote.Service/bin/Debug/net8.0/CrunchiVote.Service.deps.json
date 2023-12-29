@@ -9,6 +9,7 @@
       "CrunchiVote.Service/1.0.0": {
         "dependencies": {
           "CrunchiVote.Domain": "1.0.0",
+          "CrunchiVote.Identity": "1.0.0",
           "CrunchiVote.Infrastructure": "1.0.0",
           "CrunchiVote.Shared": "1.0.0"
         },
@@ -296,9 +297,24 @@
           "CrunchiVote.Domain.dll": {}
         }
       },
+      "CrunchiVote.Identity/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.Extensions.Configuration.Json": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Newtonsoft.Json": "13.0.3",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0"
+        },
+        "runtime": {
+          "CrunchiVote.Identity.dll": {}
+        }
+      },
       "CrunchiVote.Infrastructure/1.0.0": {
         "dependencies": {
           "CrunchiVote.Domain": "1.0.0",
+          "CrunchiVote.Identity": "1.0.0",
           "CrunchiVote.Shared": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
@@ -585,6 +601,11 @@
       "hashPath": "system.text.json.8.0.0.nupkg.sha512"
     },
     "CrunchiVote.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrunchiVote.Identity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
