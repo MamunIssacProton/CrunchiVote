@@ -43,6 +43,11 @@ internal class VoteRepository : IVoteRepository
 
     public async ValueTask<ResultDTO> IsEligibleForVote(string username,Guid commentId, VoteType voteType)
     {
+        var isOwnComment = await this.Context.Comments.AsNoTracking().AnyAsync(x=>x.UserName==username);
+        if (isOwnComment)
+        {
+            return new ResultDTO(false, "You cannot vote your own comment!");
+        }
         var isEligible=await  this.Context.Votes.AsNoTracking()
                                                     .AnyAsync
                                                     (

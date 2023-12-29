@@ -35,8 +35,7 @@ internal class ApplicationService
     {
         var pipeline = this.ResiliencePipelineProvider.GetPipeline<List<ArticleDTO>>(Fallbacks.ArticleFallBack);
         return await pipeline.ExecuteAsync(async ct =>
-        
-            await this.ArticleService.GetArticlesAsync(query.page),new CancellationToken()
+             await this.ArticleService.GetArticlesAsync(query.page),new CancellationToken()
         );
       
     }
