@@ -36,3 +36,153 @@
     transform: rotate(360deg);
   }
 }
+/* ArticleItem.css */
+.news-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-card h2 {
+  color: #333;
+}
+
+.news-card p {
+  color: #777;
+}
+
+.news-card a {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-card a:hover {
+  text-decoration: underline;
+}
+
+/* Comment.css */
+.comments-section {
+  margin-top: 20px;
+}
+
+.comments-section h3 {
+  color: #333;
+}
+
+.comments-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.comments-list li {
+  margin-bottom: 8px;
+}
+
+.comments-list strong {
+  color: #555;
+}
+
+.login-popup {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-popup h2 {
+  color: #333;
+}
+
+.login-popup label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.login-popup input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.login-popup button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-popup button:hover {
+  background-color: #0056b3;
+}
+
+.commentCard{
+  background-color:#161b22;
+  height: 5rem;
+  color: #c0affc;
+  justify-content: center;
+  margin: 10px;
+}
+.commentMessage{
+  color: blueviolet;
+  font-size: 32px;
+  font-weight: 300;
+}
+.commentAuthor
+{
+  color:dodgerblue;
+  font-size: 23px;
+  font-weight: 200;
+}
+.upVote{
+  height: 5vh;
+  width: 7vw;
+  margin-left: 1vw;
+  margin-right: .5vw;
+  background-color: green;
+  color: white;
+  border: none;
+}
+.downVote{
+  /* margin-left: 1vw;
+  margin-right: .5vw; */
+  height: 5vh;
+  width: 7vw;
+  color: white;
+  background-color: red;
+  border: none;
+}
+.commentBox
+{
+  width: 80%;
+  height: 70px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #7a25e9;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+.btnSubmit
+{
+  width: 20vw;
+  height: 10 vh;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #6204dd;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
