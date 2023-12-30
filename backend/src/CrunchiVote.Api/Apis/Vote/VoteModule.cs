@@ -1,6 +1,7 @@
 using System.Security.Claims;
 using CrunchiVote.Api.ApplicationServices;
 using CrunchiVote.Api.Commands;
+using CrunchVote.Domain;
 
 namespace CrunchiVote.Api.Apis.Vote;
 
@@ -9,7 +10,7 @@ public static class VoteModule
     public static void RegisterVoteEndpoints(this IEndpointRouteBuilder endpoints)
     {
         endpoints.MapPost(ApiEndpoints.AddVoteOnComment, async (ClaimsPrincipal user, ApplicationService appService, AddVoteCommand command) =>
-                Results.Ok(
+                Result.SucessWithData(
 
                     await appService.HandleCommandAsync(command,user.Identity.Name))
             )
@@ -18,7 +19,7 @@ public static class VoteModule
 
        
         endpoints.MapGet(ApiEndpoints.GetVotesByCommentId,  async (ApplicationService appService,int commentId) => 
-                Results.Ok(
+                Result.SucessWithData(
                     await appService.HandleQueryAsync(commentId)
                 ))
             .WithName(ApiEndpoints.GetVotesByCommentId).WithOpenApi();
