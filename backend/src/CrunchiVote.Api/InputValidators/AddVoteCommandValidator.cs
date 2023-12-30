@@ -10,8 +10,8 @@ public static class AddVoteCommandValidator
         return (command.CommentId.IsValidAsCommentId(), command.VoteType.IsValidAsVoteType()) switch
         {
             (true, true) => Result.Success(),
-            (false, _) => InputErrors.InvalidCommentId,
-            (_, false) => InputErrors.InvalidVoteType
+            (false, _) => InputErrors.InvalidArticleId,
+            (_, false) => InputErrors.InvalidComment
         };
     }
 }

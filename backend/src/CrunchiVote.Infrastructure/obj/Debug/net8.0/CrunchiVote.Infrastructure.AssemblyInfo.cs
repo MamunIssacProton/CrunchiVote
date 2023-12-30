@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CrunchiVote.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8d1a70c2c6d896f3adc796f23cc9497838a8f90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+970c61d956d6c94d9a2786ddffcae396beb87b1f")]
 [assembly: System.Reflection.AssemblyProductAttribute("CrunchiVote.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrunchiVote.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

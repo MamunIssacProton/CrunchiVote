@@ -28,7 +28,6 @@ public class Comment: AggregateRoot
     {
             
     }
-
     public Comment(Guid id) => ApplyDomainEvent(new CommentIdCreated()
     {
         Id = id
@@ -79,7 +78,7 @@ public class Comment: AggregateRoot
 
         if (!this.Id.IsValid() && !this.UserName.IsValid())
         {
-            throw new Exception("Invalidate state");
+            throw new Exception("Invalid domain state");
         }
     }
 }

@@ -60,6 +60,6 @@ public class Vote : AggregateRoot
     protected override void ValidateState()
     {
         if (this.Id == Guid.Empty)
-            throw new Exception("invalid state");
+            throw new Exception("invalid domain state");
     }
 }
