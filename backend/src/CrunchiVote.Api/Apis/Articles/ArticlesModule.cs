@@ -9,9 +9,9 @@ public static class ArticlesModule
     {
         
         endpoints.MapGet(ApiEndpoints.Articles,  async (ApplicationService appService,int page) => 
-                Results.Ok(
-                    await appService.HandleQueryAsync(new GetArticlesQuery(page)))
-            )
-            .WithName(ApiEndpoints.Articles).WithOpenApi();
+                         Results.Ok(
+                              await appService.HandleQueryAsync(new GetArticlesQuery(page))
+                              )
+                        ).WithName(ApiEndpoints.Articles).WithOpenApi();
     }
 }
