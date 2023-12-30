@@ -58,6 +58,10 @@ from previous working directory
 
 ### There is no Database seeding technique implemented on project, so in order to test all feature, please do consider by creating by using api endpoints.
 
+# `where you can extract Tech Crunch api`
+
+![alt text](api_link.png)
+
 # Task Features on API
 
 1. **Added Option Pattern for appsettings with validations** _done_
@@ -93,3 +97,15 @@ from previous working directory
 1. **Implement global State Management**
 2. **user signup**
 3. **giving upvote and downvote from application**
+
+### `used apis`
+
+![alt text](used_apis.png)
+
+### `add beaer token after authentication`
+
+![alt text](bearer_token_add.png)
+
+### `articles data`
+
+![alt text](get_articles_sample.png)
