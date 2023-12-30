@@ -11,8 +11,9 @@ public static class ArticlesModule
     {
         
         endpoints.MapGet(ApiEndpoints.Articles, async (ApplicationService appService, int page) =>
-                        page<1? Result.Failure(InputErrors.InvalidPageNumber): 
-                                Result.SucessWithData(await appService.HandleQueryAsync(new GetArticlesQuery(page))))
+                
+                        page.IsValidAsPageNumber()? Result.SucessWithData(await appService.HandleQueryAsync(new GetArticlesQuery(page)))
+                            :Result.Failure(InputErrors.InvalidPageNumber))
                  .WithName(ApiEndpoints.Articles).WithOpenApi();
     }
 }

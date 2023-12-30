@@ -62,7 +62,7 @@ internal class ApplicationService
     internal async ValueTask<List<CommentDTO>> HandleQueryAsync(int id) =>
         await this.CommentService.GetCommentsByArticleIdAsync(id);
 
-    internal async ValueTask<List<VoteDTO>> HandQueryAsync(Guid commentId) =>
+    internal async ValueTask<List<VoteDTO>> HandleQueryAsync(Guid commentId) =>
         await this.VoteService.GetVotesByCommentId(commentId);
 
     internal async ValueTask<ResultDTO> HandleQueryAsync(IsEligibleForVoteQuery query,string username)

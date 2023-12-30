@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "T+4FyP11j1lK7UkvTaSaz6aislw6bG3FevF+3Jvz6kHXaRl7pfKyosVKHrljABC0p1YX/jWVbcS740GjO1m6VQ==",
+  "dgSpecHash": "1dv3IzzWiu+zkF0RUQX9cCOAq2e1+GudMhX7bsKz42GjCV7ZqJzju1gsaI9B3Dlcl8c3vm9MIjuKP1LAjCdRqg==",
   "success": true,
   "projectFilePath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/CrunchiVote.Api.csproj",
   "expectedPackageFiles": [
     "/Users/proton/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
+    "/Users/proton/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.9.0/fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
     "/Users/proton/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/proton/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/8.0.0/microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
     "/Users/proton/.nuget/packages/microsoft.aspnetcore.authorization/8.0.0/microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",
