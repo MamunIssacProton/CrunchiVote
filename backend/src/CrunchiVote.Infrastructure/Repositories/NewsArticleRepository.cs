@@ -27,7 +27,7 @@ internal sealed class NewsArticleRepository :INewsArticleRepository
         var res = new List<ArticleDTO>();
         foreach (var article in articles)
         {
-           res.Add(new ArticleDTO(article.Id,article.Title.Rendered,article.Link,article.Yoast_Head.GetAuthorName(), await this.CommentsRepository.GetCommentsByArticleIdAsync(article.Id)));
+           res.Add(new ArticleDTO(article.Id,article.Title.Rendered.FormatTitle(),article.Link,article.Yoast_Head.GetAuthorName(), await this.CommentsRepository.GetCommentsByArticleIdAsync(article.Id)));
             
         }
         return res;

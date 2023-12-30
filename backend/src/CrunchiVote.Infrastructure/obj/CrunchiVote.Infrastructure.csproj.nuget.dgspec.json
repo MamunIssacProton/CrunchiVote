@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Infrastructure/CrunchiVote.Infrastructure.csproj": {}
+    "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Infrastructure\\CrunchiVote.Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/CrunchiVote.Domain.csproj": {
+    "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Domain\\CrunchiVote.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/CrunchiVote.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Domain\\CrunchiVote.Domain.csproj",
         "projectName": "CrunchiVote.Domain",
-        "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/CrunchiVote.Domain.csproj",
-        "packagesPath": "/Users/proton/.nuget/packages/",
-        "outputPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/obj/",
+        "projectPath": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Domain\\CrunchiVote.Domain.csproj",
+        "packagesPath": "C:\\Users\\proton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/proton/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\proton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\Nuget": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.pkg.github.com/WE-TECH-GLOBAL-PTE-LTD/index.json": {}
         },
@@ -55,27 +61,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/CrunchiVote.Identity.csproj": {
+    "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Identity\\CrunchiVote.Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/CrunchiVote.Identity.csproj",
+        "projectUniqueName": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Identity\\CrunchiVote.Identity.csproj",
         "projectName": "CrunchiVote.Identity",
-        "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/CrunchiVote.Identity.csproj",
-        "packagesPath": "/Users/proton/.nuget/packages/",
-        "outputPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/obj/",
+        "projectPath": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Identity\\CrunchiVote.Identity.csproj",
+        "packagesPath": "C:\\Users\\proton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Identity\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/proton/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\proton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\Nuget": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.pkg.github.com/WE-TECH-GLOBAL-PTE-LTD/index.json": {}
         },
@@ -146,27 +158,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Infrastructure/CrunchiVote.Infrastructure.csproj": {
+    "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Infrastructure\\CrunchiVote.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Infrastructure/CrunchiVote.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Infrastructure\\CrunchiVote.Infrastructure.csproj",
         "projectName": "CrunchiVote.Infrastructure",
-        "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Infrastructure/CrunchiVote.Infrastructure.csproj",
-        "packagesPath": "/Users/proton/.nuget/packages/",
-        "outputPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Infrastructure/obj/",
+        "projectPath": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Infrastructure\\CrunchiVote.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\proton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/proton/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\proton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\Nuget": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.pkg.github.com/WE-TECH-GLOBAL-PTE-LTD/index.json": {}
         },
@@ -174,14 +192,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/CrunchiVote.Domain.csproj": {
-                "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/CrunchiVote.Domain.csproj"
+              "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Domain\\CrunchiVote.Domain.csproj": {
+                "projectPath": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Domain\\CrunchiVote.Domain.csproj"
               },
-              "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/CrunchiVote.Identity.csproj": {
-                "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/CrunchiVote.Identity.csproj"
+              "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Identity\\CrunchiVote.Identity.csproj": {
+                "projectPath": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Identity\\CrunchiVote.Identity.csproj"
               },
-              "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Shared/CrunchiVote.Shared.csproj": {
-                "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Shared/CrunchiVote.Shared.csproj"
+              "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Shared\\CrunchiVote.Shared.csproj": {
+                "projectPath": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Shared\\CrunchiVote.Shared.csproj"
               }
             }
           }
@@ -247,27 +265,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Shared/CrunchiVote.Shared.csproj": {
+    "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Shared\\CrunchiVote.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Shared/CrunchiVote.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Shared\\CrunchiVote.Shared.csproj",
         "projectName": "CrunchiVote.Shared",
-        "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Shared/CrunchiVote.Shared.csproj",
-        "packagesPath": "/Users/proton/.nuget/packages/",
-        "outputPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Shared/obj/",
+        "projectPath": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Shared\\CrunchiVote.Shared.csproj",
+        "packagesPath": "C:\\Users\\proton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/proton/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\proton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\Nuget": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.pkg.github.com/WE-TECH-GLOBAL-PTE-LTD/index.json": {}
         },
@@ -275,8 +299,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/CrunchiVote.Domain.csproj": {
-                "projectPath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Domain/CrunchiVote.Domain.csproj"
+              "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Domain\\CrunchiVote.Domain.csproj": {
+                "projectPath": "C:\\Users\\proton\\Desktop\\CrunchiVote\\backend\\src\\CrunchiVote.Domain\\CrunchiVote.Domain.csproj"
               }
             }
           }
@@ -306,7 +330,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
