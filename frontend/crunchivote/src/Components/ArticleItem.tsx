@@ -55,7 +55,7 @@ const[message,setMesage]=useState<string>("");
       <h2>{heading}</h2>
       <p>Author: {author}</p>
       <a href={link} target="_blank" rel="noopener noreferrer">
-          Read the post
+        { link}
       </a>
 
       {comments.length > 0 && (
