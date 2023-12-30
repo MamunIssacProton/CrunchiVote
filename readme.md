@@ -64,18 +64,18 @@ from previous working directory
 
 # Task Features on API
 
-1. **Added Option Pattern for appsettings with validations** _done_
+1. **Added Option Pattern for appsettings with validations** - _done_
 2. **Added Application Resiliency on Api project** - _done_
 3. **Added Centralized Global Error Handling** - _done_
-4. **Added ResultPattern for better developer experience** _done_
-5. **Added Input validation** _done_
-6. **Added Domain Business Logic Validation** _done_
+4. **Added ResultPattern for better developer experience** - _done_
+5. **Added Input validation** - _done_
+6. **Added Domain Business Logic Validation** - _done_
 7. **Added Automated Runtime Dependency Injection based on a Signature Interface** - _done_
 8. **Added Auth and Authz** - _done_
 9. **Added Response Compression** - _done_
 10. **Added Rate Limiter** - _done_
 11. **Added FaultTolarance** - _done_
-12. **Added Global Error Handling** - _done_
+12. **Well Structure Data with proper formatting based on requirement** - _done_
 
 # Constraints used for logical validation
 
