@@ -46,7 +46,6 @@
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/Polly.dll
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/Polly.Core.dll
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/Polly.Extensions.dll
-/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/FluentValidation.dll
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
@@ -270,4 +269,3 @@ C:/Users/proton/Desktop/CrunchiVote/backend/src/CrunchiVote.Api/obj/Debug/net8.0
 C:/Users/proton/Desktop/CrunchiVote/backend/src/CrunchiVote.Api/obj/Debug/net8.0/CrunchiVote.Api.genruntimeconfig.cache
 C:/Users/proton/Desktop/CrunchiVote/backend/src/CrunchiVote.Api/obj/Debug/net8.0/ref/CrunchiVote.Api.dll
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/obj/Debug/net8.0/CrunchiVote.Api.sourcelink.json
-/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll

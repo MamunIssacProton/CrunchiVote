@@ -1,7 +1,6 @@
 using System.Text.RegularExpressions;
 using CrunchiVote.Api.Commands;
 using CrunchVote.Domain;
-using FluentValidation;
 
 namespace CrunchiVote.Api.InputValidators;
 

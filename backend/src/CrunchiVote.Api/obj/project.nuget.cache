@@ -1,11 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "1dv3IzzWiu+zkF0RUQX9cCOAq2e1+GudMhX7bsKz42GjCV7ZqJzju1gsaI9B3Dlcl8c3vm9MIjuKP1LAjCdRqg==",
+  "dgSpecHash": "bN9CRzrJX14k4WAOI3W4ixB6JY6Negh4JgXk7otMaxQVPodAHeAKeRNU81hmUDtV0L7aCLJ3DVdCZAZgznieYw==",
   "success": true,
   "projectFilePath": "/Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Api/CrunchiVote.Api.csproj",
   "expectedPackageFiles": [
-    "/Users/proton/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
-    "/Users/proton/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.9.0/fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
     "/Users/proton/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/proton/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/8.0.0/microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
     "/Users/proton/.nuget/packages/microsoft.aspnetcore.authorization/8.0.0/microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",
@@ -54,6 +52,7 @@
     "/Users/proton/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/7.0.3/microsoft.identitymodel.protocols.openidconnect.7.0.3.nupkg.sha512",
     "/Users/proton/.nuget/packages/microsoft.identitymodel.tokens/7.0.3/microsoft.identitymodel.tokens.7.0.3.nupkg.sha512",
     "/Users/proton/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/proton/.nuget/packages/microsoft.visualstudio.azure.containers.tools.targets/1.19.5/microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "/Users/proton/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
     "/Users/proton/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/proton/.nuget/packages/npgsql/8.0.0/npgsql.8.0.0.nupkg.sha512",
@@ -81,7 +80,10 @@
     "/Users/proton/.nuget/packages/system.text.encoding.codepages/6.0.0/system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "/Users/proton/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/Users/proton/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
-    "/Users/proton/.nuget/packages/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg.sha512"
+    "/Users/proton/.nuget/packages/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg.sha512",
+    "/Users/proton/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/8.0.0/microsoft.netcore.app.runtime.linux-x64.8.0.0.nupkg.sha512",
+    "/Users/proton/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/8.0.0/microsoft.aspnetcore.app.runtime.linux-x64.8.0.0.nupkg.sha512",
+    "/Users/proton/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.0/microsoft.netcore.app.host.linux-x64.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

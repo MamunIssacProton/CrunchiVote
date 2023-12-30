@@ -68,9 +68,19 @@ builder.Services.AddOptions();
 builder.Services.AddAntiforgery();
 builder.Services.AddControllersWithViews();
 
+
+//enable CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "frontend",
+        policy => policy.AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod());;
+});
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+app.UseCors("frontend");
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

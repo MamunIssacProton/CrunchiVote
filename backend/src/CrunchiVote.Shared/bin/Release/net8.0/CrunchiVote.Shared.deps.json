@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CrunchiVote.Shared/1.0.0": {
+        "dependencies": {
+          "CrunchiVote.Domain": "1.0.0"
+        },
+        "runtime": {
+          "CrunchiVote.Shared.dll": {}
+        }
+      },
+      "CrunchiVote.Domain/1.0.0": {
+        "runtime": {
+          "CrunchiVote.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CrunchiVote.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrunchiVote.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

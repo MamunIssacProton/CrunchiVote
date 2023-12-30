@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wVcaWK09ZxhaFHHuLyr9mD+TvUbQ5kyAjNdJG8nmXtA=",
+  "Source": "CrunchiVote.Api",
+  "BasePath": "_content/CrunchiVote.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
