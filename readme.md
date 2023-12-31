@@ -89,14 +89,16 @@ from previous working directory
 
 1. **Add Architecture Test**
 2. **Add Event Sourcing**
-3. **Added Resilience Commenting**
-4. **Added Serilog for logging**
+3. **Add Resiliency on Commenting**
+4. **Add Serilog for logging**
 
 # UnFinished features on Front-end Application [was running out of time]
 
-1. **Implement global State Management**
+1. **Implement global State Management with lazy load**
 2. **user signup**
 3. **giving upvote and downvote from application**
+
+## Due to Visual Studio for mac does not support any workload for .NET 8, I've used Individual project configurations appsettings.json for independent database migration.such as `Infrastructre` and `Identity` project and due to same file as output file from multiple project, the given `Dockerfile` or `dotnet publish` will not working or unable to build the `docker image`.
 
 ### `used apis`
 
