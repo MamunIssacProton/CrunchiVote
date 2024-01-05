@@ -97,7 +97,6 @@
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/obj/Debug/net8.0/CrunchiVote.Identity.csproj.CopyComplete
-C:/Users/proton/Desktop/CrunchiVote/backend/src/CrunchiVote.Identity/bin/Debug/net8.0/appsettings.json
 C:/Users/proton/Desktop/CrunchiVote/backend/src/CrunchiVote.Identity/bin/Debug/net8.0/CrunchiVote.Identity.exe
 C:/Users/proton/Desktop/CrunchiVote/backend/src/CrunchiVote.Identity/bin/Debug/net8.0/CrunchiVote.Identity.deps.json
 C:/Users/proton/Desktop/CrunchiVote/backend/src/CrunchiVote.Identity/bin/Debug/net8.0/CrunchiVote.Identity.runtimeconfig.json
@@ -198,7 +197,6 @@ C:/Users/proton/Desktop/CrunchiVote/backend/src/CrunchiVote.Identity/obj/Debug/n
 C:/Users/proton/Desktop/CrunchiVote/backend/src/CrunchiVote.Identity/obj/Debug/net8.0/CrunchiVote.Identity.genruntimeconfig.cache
 C:/Users/proton/Desktop/CrunchiVote/backend/src/CrunchiVote.Identity/obj/Debug/net8.0/ref/CrunchiVote.Identity.dll
 /Users/proton/Projects/CrunchiVote/backend/src/CrunchiVote.Identity/obj/Debug/net8.0/CrunchiVote.Identity.sourcelink.json
-C:\Users\proton\Desktop\CrunchiVote\backend\src\CrunchiVote.Identity\bin\Debug\net8.0\appsettings.json
 C:\Users\proton\Desktop\CrunchiVote\backend\src\CrunchiVote.Identity\bin\Debug\net8.0\CrunchiVote.Identity.exe
 C:\Users\proton\Desktop\CrunchiVote\backend\src\CrunchiVote.Identity\bin\Debug\net8.0\CrunchiVote.Identity.deps.json
 C:\Users\proton\Desktop\CrunchiVote\backend\src\CrunchiVote.Identity\bin\Debug\net8.0\CrunchiVote.Identity.runtimeconfig.json

@@ -8,6 +8,7 @@
         <RuntimeIdentifiers>linux-x64</RuntimeIdentifiers>
         <EnableSdkContainerDebugging>True</EnableSdkContainerDebugging>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <UserSecretsId>56bc583a-6db7-4653-a58f-eb8c7bbdf459</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
