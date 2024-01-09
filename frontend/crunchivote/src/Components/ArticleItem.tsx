@@ -4,7 +4,9 @@ import { useAuth } from "../Components/Auth/AuthContext";
 import Auth from "../Components/AuthComponent";
 import LoginPopup from "../Components/LoginPopup";
 import CommentItem from "./CommentItem";
-
+import { addComment } from "../store/features/ArticlesSlice";
+import { useDispatch } from "react-redux";
+import AddCommentComponent from "./AddCommentComponent";
 
 interface Comment {
   commentId: string;
@@ -50,7 +52,7 @@ const[message,setMesage]=useState<string>("");
   };
 
   return (
-    <div className="news-card">
+    <div className="listitem">
   <h4>{message}</h4>
       <h2>{heading}</h2>
       <p>Author: {author}</p>
@@ -71,20 +73,8 @@ const[message,setMesage]=useState<string>("");
           </ul>
         </div>
       )}
-
-   
-        <div>
-          <label>
-            <textarea className="commentBox" placeholder="Type your comment here"
-              value={commentInput}
-              onChange={(e) => setCommentInput(e.target.value)}
-            />
-            
-          </label>
-          <button onClick={(e) => handleCommentSubmit(id)} className="btnSubmit">Submit Comment</button>
-        </div>
-   
-
+    <label>article id {id}</label>
+      <AddCommentComponent articleId={id}></AddCommentComponent>
       {showLoginPopup && !isAuthenticated && <LoginPopup onClose={closeLoginPopup} />}
     </div>
   );

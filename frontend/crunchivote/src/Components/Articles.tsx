@@ -2,19 +2,19 @@ import React, { useEffect, useState } from "react";
 import * as API from '../apis/CrunchiVoteApi';
 import ArticleItem from "./ArticleItem";
 
-interface Comment {
+export interface ArticleComment {
   commentId: string;
   username: string;
   commentText: string;
   votes: [];
 }
 
-interface NewsItem {
+export interface NewsItem {
   id: number;
   heading: string;
   link: string;
   author: string;
-  comments: Comment[];
+  comments: ArticleComment[];
 }
 
 const Articles: React.FC = () => {
@@ -39,12 +39,19 @@ const Articles: React.FC = () => {
   return (
     <div className="App">
       <h1>Crunchi Votes</h1>
+      <div className="listcontainer">
 
       {loading ? (
         <p>Loading...</p>
       ) : (
-        data.map((item) => <ArticleItem key={item.id} {...item} />)
+        
+        data.map((item) =><ArticleItem key={item.id} {...item} />
+        
+          
+        )
+         
       )}
+      </div>
     </div>
   );
 };
