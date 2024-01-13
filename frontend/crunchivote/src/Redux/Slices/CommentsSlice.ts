@@ -21,7 +21,7 @@ const CommentsSlice=createSlice
             .flatMap((comments) => comments)
             .filter((comment) => comment.articleId === action.payload.articleId);
     
-          state.comments = { [action.payload.articleId]: filteredComments };
+            state.comments = { [action.payload.articleId]: filteredComments };
         },
 
         
@@ -52,8 +52,7 @@ const CommentsSlice=createSlice
             {
                 state.comments[action.payload.articleId]=[];
             }
-            state.comments[action.payload.articleId].push(action.payload)
-          
+            state.comments[action.payload.articleId].push(action.payload);
         }
 
 

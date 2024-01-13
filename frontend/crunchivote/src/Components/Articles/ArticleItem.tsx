@@ -15,7 +15,7 @@ interface ArticleItemProps
 const ArticleItem:React.FC<ArticleItemProps>=({articleId,article})=>
 {
     const dispatch=useDispatch();
-    const comments=useSelector((state:RootState)=>state.comment.comments[articleId] || []);
+    const comments=useSelector((state:RootState)=> state.comment.comments[articleId] || article.comments || []);
 
 
     useEffect(()=>

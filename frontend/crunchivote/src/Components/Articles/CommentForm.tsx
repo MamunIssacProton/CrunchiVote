@@ -2,7 +2,9 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addComment } from "../../Redux/Slices/CommentsSlice";
 import GenerateGuid from "../../utils/GuidGenerator";
-
+import { useAuth } from "../Auth/AuthContext";
+import * as API from '../../apis/CrunchiVoteApi';
+import LoginPopup from "../LoginPopup";
 interface CommentFormProps
 
 {
@@ -11,22 +13,45 @@ interface CommentFormProps
 
 const CommentForm: React.FC<CommentFormProps>=({articleId})=>
     {
+
+        const { token, isAuthenticated } = useAuth();
+        const [showLoginPopup, setShowLoginPopup] = useState(false);
+        const [message,setMesage]=useState('');
+        const openLoginPopup = () => setShowLoginPopup(true);
+        const closeLoginPopup = () => setShowLoginPopup(false);
+
+
+
         const dispatch=useDispatch();
         const [newComment, setNewComment]=useState('');
         
-        const handleCommentSubmit=()=>
+        const handleCommentSubmit= async()=>
         {
-            const username="pro";
-            dispatch(
-                addComment({
+            if (!isAuthenticated)
+             {
+                openLoginPopup();
+                return;
+             }
+             const response= await API.postComment(newComment,articleId);
+             console.log('res',response);
+             if(response?.ok)
+             {
+                dispatch(addComment
+                    ({
                     articleId:articleId,
                     commentId: GenerateGuid(),
                     commentText:newComment,
                     votes:[]
-                })
-            );
-        
+                    }));
+
+             }
+             else
+             {
+               setMesage(`${response?.statusText}`);
+             }
+             
             setNewComment('');
+            setMesage('');
         }
 
 
@@ -37,7 +62,9 @@ const CommentForm: React.FC<CommentFormProps>=({articleId})=>
                 placeholder="type your comment here"
 
                 />
-                <button className="vsend-button" onClick={handleCommentSubmit}>Post Comment</button>
+                <button  onClick={handleCommentSubmit}>Post Comment</button>
+           
+                {showLoginPopup && !isAuthenticated && <LoginPopup onClose={closeLoginPopup} />}
             </div>
         )
     };

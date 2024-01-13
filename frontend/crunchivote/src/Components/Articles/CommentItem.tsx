@@ -15,7 +15,12 @@ interface CommentItemProps
 const CommentItem:React.FC<CommentItemProps>=({commentId,comment})=>
 {
     const dispatch=useDispatch();
-    const votes=useSelector((state:RootState)=>state.vote.votes[commentId] || []);
+    const votes=useSelector((state:RootState)=>
+    {
+        const stateVotes=state.vote.votes[commentId] || [];
+        const persistedVotes=comment.votes || [];
+        return [...stateVotes,...persistedVotes];
+    })
    
     useEffect(()=>
     {
@@ -23,11 +28,11 @@ const CommentItem:React.FC<CommentItemProps>=({commentId,comment})=>
     },[dispatch,commentId]);
     return(
         <div>
-            <p>{comment.commentText} &nbsp;&nbsp;&nbsp;
-            
-             <VotingItem commentId={comment.commentId}></VotingItem>
-            <VoteList key={commentId} votes={votes}></VoteList>
-            </p>
+            <>{comment.commentText} &nbsp;&nbsp;&nbsp;
+
+              <VotingItem commentId={comment.commentId}></VotingItem>
+              <VoteList key={commentId} votes={votes}></VoteList>
+            </>
             
             
             

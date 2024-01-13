@@ -4,6 +4,6 @@ export interface Vote
 {
     commentId: string,
     voteId: string,
-    givenBy: string,
+    givenBy: string | '',
     voteType: VoteType
 }
