@@ -4,13 +4,18 @@ import './App.css';
 import { Provider } from 'react-redux';
 
 import { AuthProvider } from './Components/Auth/AuthContext';
-import Articles from './Components/Articles';
+
+import { store } from './Store';
+import ArticleList from './Components/Articles/ArticleList';
 
 const App: React.FC = () => {
   return (
     <div className="App">
     <AuthProvider>
-         <Articles />
+      <Provider store={store}>
+                <ArticleList></ArticleList>
+      </Provider>
+
     </AuthProvider>
    
 

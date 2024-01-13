@@ -3,11 +3,8 @@ import { useAuth } from "./Auth/AuthContext";
 import Auth from "./AuthComponent";
 import * as API from '../apis/CrunchiVoteApi';
 import LoginPopup from "./LoginPopup";
-export enum VoteType
-{
-    DownVote,
-    UpVote
-}
+import { VoteType } from "../Enums/VoteType";
+
 interface Vote{
     commentId:string;
     voteId:string;

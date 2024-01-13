@@ -1,5 +1,5 @@
 import { log } from "console";
-import { VoteType } from "../Components/CommentItem";
+import { VoteType } from "../Enums/VoteType";
 
 const BaseUrl = "http://localhost:5254";
 export const getArticles = async (page:number) => {

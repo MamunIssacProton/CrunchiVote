@@ -12,3 +12,11 @@ services:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
       POSTGRES_DB: crunchivote
+  # backend:
+  #   build:
+  #     context: /backend/src
+  #     dockerfile: Dockerfile
+  #   container_name: crunchivote_api
+  #   restart: always
+  #   ports:
+  #     - 8080:8080

@@ -2,10 +2,10 @@
 
 #nullable disable
 
-namespace CrunchiVote.Infrastructure.Migrations
+namespace CrunchiVote.Identity.Migrations
 {
     /// <inheritdoc />
-    public partial class updatedVote : Migration
+    public partial class InitIdentity : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

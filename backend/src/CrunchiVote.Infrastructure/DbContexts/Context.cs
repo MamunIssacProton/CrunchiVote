@@ -13,7 +13,7 @@ public class Context:DbContext
 
     public Context()
     {
-        
+        this.Database.Migrate();
     }
     public Context(DbContextOptions<Context> options) : base(options)
     {
@@ -29,8 +29,9 @@ public class Context:DbContext
                                 .Build();
 
             var connectionString = configuration.GetConnectionString("postgres");
-
+          //string connectionString = "User ID=user;password=password;Server=localhost;Port=5432;Database=crunchivote;Pooling=true;Include Error Detail=true;";
             optionsBuilder.UseNpgsql(connectionString);
+            this.Database.Migrate();
         }
         base.OnConfiguring(optionsBuilder);
     }
