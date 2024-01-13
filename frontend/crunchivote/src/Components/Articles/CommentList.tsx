@@ -13,7 +13,7 @@ const CommentList:React.FC<CommentDataSource>=({comments})=>
             {
                 comments.map((comment)=>(
                 
-                    <CommentItem key={comment.commentId} comment={comment}></CommentItem>
+                    <CommentItem key={comment.commentId} commentId={comment.commentId} comment={comment}></CommentItem>
                 ))
                 
             }

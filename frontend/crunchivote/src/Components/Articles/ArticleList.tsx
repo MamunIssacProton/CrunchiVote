@@ -15,11 +15,6 @@ const ArticleList: React.FC = () => {
     const articles = useSelector((state: RootState) => state.article.articles);
     const loading = useSelector((state: RootState) => state.article.loading);
     const error = useSelector((state: RootState) => state.article.error);
-    
-
-    const comments=useSelector((state:RootState)=>state.comment.comments);
-   
-
 
     useEffect(() => {
         const fetchData = async () => {

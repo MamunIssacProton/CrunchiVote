@@ -28,7 +28,7 @@ const CommentsSlice=createSlice
         getCommentsSuccess(state,action:PayloadAction<ArticleComment[]>)
         { 
             action.payload.forEach((comment) => {
-                console.log(`on getting comment : ${comment.commentId} txt : ${comment.commentText}`)
+                
                 if(!state.comments[comment.commentId])
                 {
                     state.comments[comment.commentId]=[];

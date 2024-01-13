@@ -1,12 +1,14 @@
 import {configureStore } from "@reduxjs/toolkit";
 import ArticlesReducer from './Redux/Slices/ArticlesSlice';
 import CommentsReducer from './Redux/Slices/CommentsSlice';
+import VoteReducer from './Redux/Slices/VotesSlice'
 import { useDispatch, TypedUseSelectorHook, useSelector } from "react-redux";
 
 export const store = configureStore({
   reducer: {
     article: ArticlesReducer,
-    comment: CommentsReducer
+    comment: CommentsReducer,
+    vote: VoteReducer
   }
 });
 
