@@ -1,25 +1,29 @@
 FROM node:alpine as build
 
-#
+WORKDIR /app
+
 COPY package.json package-lock.json ./
 
-RUN npm install && mkdir /crunchivote && mv ./node_modules ./crunchivote
-
-WORKDIR /crunchivote
+RUN npm install --production
 
 COPY . .
 
-RUN npm run build
-
-RUN chmod -R 777 /crunchivote
+RUN npm run build && \
+    rm -rf node_modules && \
+    npm install --production && \
+    npm prune --production && \
+    chmod -R 777 /app
 
 FROM nginx:alpine
 
-RUN rm -rf /usr/share/nginx/html/*
+WORKDIR /usr/share/nginx/html
 
-COPY --from=build /crunchivote/ /usr/share/nginx/html
+RUN rm -rf ./*
+
+COPY --from=build /app/build/ .
+
 COPY default.conf /etc/nginx/conf.d/default.conf
 
-RUN chmod -R 777 /usr/share/nginx/html
+RUN chmod -R 777 .
 
 EXPOSE 8080
