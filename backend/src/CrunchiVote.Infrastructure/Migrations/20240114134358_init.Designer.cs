@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CrunchiVote.Infrastructure.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20240106102615_init")]
+    [Migration("20240114134358_init")]
     partial class init
     {
         /// <inheritdoc />

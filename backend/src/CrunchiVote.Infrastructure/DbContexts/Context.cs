@@ -25,7 +25,7 @@ public class Context:DbContext
        
             string connectionString = "User ID=user;password=password;Server=localhost;Port=5432;Database=crunchivote;Pooling=true;Include Error Detail=true;";
             optionsBuilder.UseNpgsql(connectionString);
-            this.Database.Migrate();
+            
         
         base.OnConfiguring(optionsBuilder);
     }

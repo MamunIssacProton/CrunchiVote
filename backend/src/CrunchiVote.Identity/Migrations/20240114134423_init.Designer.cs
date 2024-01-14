@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CrunchiVote.Identity.Migrations
 {
     [DbContext(typeof(IdentityContext))]
-    [Migration("20231228184930_updated_CrunchiVoteUsers")]
-    partial class updated_CrunchiVoteUsers
+    [Migration("20240114134423_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
