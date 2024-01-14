@@ -38,6 +38,21 @@
 `bash start_frontend.sh`
 
 ### you can choose git bash for the bash script terminal if you are facing any issues running the script.
+
+##
+# To setup and run applications using powershell scripts
+##
+#### From the CrunchiVote folder, run
+`setup.ps1`
+from any poweshell terminal
+
+#### To run frontend and backend api, run
+
+
+`start_backend.ps1`
+
+`start_frontend.ps1`
+
 <!-- 
 or use visual studio code docker plugin to do docker-compose-up operation
 
