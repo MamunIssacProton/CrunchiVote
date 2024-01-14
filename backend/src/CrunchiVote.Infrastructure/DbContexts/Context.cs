@@ -22,17 +22,11 @@ public class Context:DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        if (!optionsBuilder.IsConfigured)
-        {
-            var configuration = new ConfigurationBuilder()
-                                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                                .Build();
-
-            var connectionString = configuration.GetConnectionString("postgres");
-          //string connectionString = "User ID=user;password=password;Server=localhost;Port=5432;Database=crunchivote;Pooling=true;Include Error Detail=true;";
+       
+            string connectionString = "User ID=user;password=password;Server=localhost;Port=5432;Database=crunchivote;Pooling=true;Include Error Detail=true;";
             optionsBuilder.UseNpgsql(connectionString);
             this.Database.Migrate();
-        }
+        
         base.OnConfiguring(optionsBuilder);
     }
 

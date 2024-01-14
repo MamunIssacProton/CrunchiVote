@@ -11,7 +11,7 @@
 #### projects are implented to follow `Domain Driven Design` process, `CQRS  `architectural pattern,`SOLID Principles` `OPTION Pattern` `Result Pattern` development guideline
 
 ## How to run / setup this project on your local environment
-
+# Latest update
 1. clone this repository by following this command
 
    `git clone https://github.com/MamunIssacProton/CrunchiVote.git`
@@ -19,10 +19,13 @@
 
 2. navigate to the project directory. you can use command like `cd CrunchiVote`
 
-3. run docker-compose file to pulling required postgresql image from dockerhub. you can use following command
+3. execute the startup.sh bash file with a bash terminal by following
 
-`docker compose -f "docker-compose.yml" up -d --build `
+`bash setup.sh`
 
+### That's all you need to do the setup on this updated version
+
+<!-- 
 or use visual studio code docker plugin to do docker-compose-up operation
 
 4. Open the Solution (sln file) in Visual Studio or your IDE
@@ -110,4 +113,4 @@ from previous working directory
 
 ### `articles data`
 
-![alt text](get_articles_sample.png)
+![alt text](get_articles_sample.png) -->
