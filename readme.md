@@ -25,6 +25,19 @@
 
 ### That's all you need to do the setup on this updated version
 
+## To run the backend api using bash sript, run
+`bash start_backend.sh`
+
+
+ `http://localhost:5254/swagger/index.html` to see all available endpoints.
+ ## 
+ 
+ ### make sure you've created a user to perform comment and vote on a article. you can get the user signup api endpoint from available api endpoints on swagger ui
+ 
+## To run the frontend  api using bash sript, run
+`bash start_frontend.sh`
+
+### you can choose git bash for the bash script terminal if you are facing any issues running the script.
 <!-- 
 or use visual studio code docker plugin to do docker-compose-up operation
 

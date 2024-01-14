@@ -24,10 +24,3 @@ fi
 
 dotnet ef migrations add init -c IdentityContext
 dotnet ef database update -c IdentityContext
-
-cd "$CRUNCHI_VOTE_DIR/backend/src/CrunchiVote.Api"
-dotnet run
-
-cd "$CRUNCHI_VOTE_DIR/frontend/crunchivote"
-npm i
-npm start
