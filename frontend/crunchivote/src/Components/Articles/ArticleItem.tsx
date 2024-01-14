@@ -30,6 +30,7 @@ const ArticleItem:React.FC<ArticleItemProps>=({articleId,article})=>
         <div>
             <h1>{article.heading}</h1>
             <h4>{article.author}</h4>
+            <a href={article.link}>Read this article</a>
             <CommentForm articleId={article.id}></CommentForm>
              <h6>comments: </h6>
                    
